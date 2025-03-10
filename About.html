@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/rawline" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.svg">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/about.css">
+    <title>Favoritos SEJUSC</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="container_logo">
+                <a href="index.html"><img src="./assets/icons/favicon.svg" alt=""></a>
+                <a href="index.html" class="cabecalho__container__link"> Secretaria de <br> <strong>Estado de Justiça, <br> Direitos Humanos <br> e Cidadania</strong></a>
+            </div>
+            <p class="cabecalho__container__favoritos">Favoritos da Rede SEJUSC</p>
+        </div>
+    </header>
+
+    <section class="principal__background">
+        <main class="principal">
+            <div id="desenvolvedores" class="desenvolvedores">
+                <a href="https://www.linkedin.com/in/gabriel-nery-b87a0b258/" class="card__desenvolvedores__link">
+                    <div class="card__desenvolvedores">
+                        <div class="card__desenvolvedores__image">
+                            <img class="imagem-chefe" src="./assets/desenvolvedores/chefe-gabriel.png" alt="">
+                        </div>
+                        <h1>Gabriel Nery</h1>
+                        <p>Gerente de Tecnologia da<br> Informação</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/nathalia-maisa-alencar-de-araujo/" class="card__desenvolvedores__link" target="_blank">
+                    <div class="card__desenvolvedores">
+                        <div class="card__desenvolvedores__image">
+                            <img src="./assets/desenvolvedores/nathalia-fundo-branco.jpg" alt="">
+                        </div>
+                        <h1>Nathalia Alencar</h1>
+                        <p>Desenvolvedor Front-End <br> Coordenadora</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-nather/" class="card__desenvolvedores__link" target="_blank">
+                    <div class="card__desenvolvedores">
+                        <div class="card__desenvolvedores__image">
+                            <img src="./assets/desenvolvedores/lucas-nather.png" alt="">
+                        </div>
+                        <h1>Lucas Nather</h1>
+                        <p>Desenvolvedor FullStack</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/robsonfelipemir/" class="card__desenvolvedores__link">
+                    <div class="card__desenvolvedores">
+                        <div class="card__desenvolvedores__image">
+                            <img src="./assets/desenvolvedores/felipe-novo-fundo-branco-removebg-preview.png" alt="">
+                        </div>
+                        <h1>Robson Felipe</h1>
+                        <p>Desenvolvedor Back-End</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/yasmin-rocha-chagas/" class="card__desenvolvedores__link">
+                    <div class="card__desenvolvedores">
+                        <div class="card__desenvolvedores__image">
+                            <img src="./assets/desenvolvedores/yasmin-fundo-branco.jpeg" alt="">
+                        </div>
+                        <h1>Yasmin Rocha</h1>
+                        <p>Design</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape__container">
+            <a class="rodape__copyright" href="About.html" target="_blank">Desenvolvido pela Gerência da Tecnologia de Informação - SEJUSC</a>
+            <div>
+                <img src="assets/logo-gov-horizontal-contraste.png" alt="Logo Governo do Estado do Amazonas" class="rodape__container__image">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/links.js"></script>
+    <script>
+        function setSessionCookie(name, value) {
+            
+            document.cookie = `${name}=${value}; path=/`;
+        }
+
+        setSessionCookie("sessionId", "abc123");
+        
+        console.log("Cookies atuais:", document.cookie);
+
+    </script>
+
+</body>
+</html>

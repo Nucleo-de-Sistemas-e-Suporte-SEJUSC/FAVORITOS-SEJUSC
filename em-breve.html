@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Power BI</title>
+</head>
+<body class="body-em-breve">
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="container_logo">
+                <a href="index.html"><img src="./assets/icons/favicon.svg" alt=""></a>
+                <a href="index.html" class="cabecalho__container__link"> Secretaria de <br> <strong>Estado de Justiça, <br> Direitos Humanos <br> e Cidadania</strong></a>
+            </div>
+            <p class="cabecalho__container__favoritos">Favoritos da Rede SEJUSC</p>
+        </div>
+    </header>   
+
+    <section class="principal__background">
+        <main>
+            <h1 class="titulo-em-breve">Em Breve</h1>
+        </main>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape__container">
+            <a class="rodape__copyright" href="About.html" target="_blank">Desenvolvido pela Gerência da Tecnologia de Informação - SEJUSC</a>
+            <div>
+                <img src="assets/logo-gov-horizontal-contraste.png" alt="Logo Governo do Estado do Amazonas" class="rodape__container__image">
+            </div>
+        </div>
+    </footer>
+    <script>
+        function setSessionCookie(name, value) {
+            
+            document.cookie = `${name}=${value}; path=/`;
+        }
+
+        setSessionCookie("sessionId", "abc123");
+        
+        console.log("Cookies atuais:", document.cookie);
+
+    </script>
+
+</body>
+</html>
