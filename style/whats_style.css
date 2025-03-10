@@ -1,0 +1,57 @@
+.principal-wpp {
+    background-image: url(../assets/main-brackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    box-sizing: content-box;
+}
+.profile-sharing {
+    text-align: center;
+    margin: 30px;
+    padding: 80px;
+    background-color: #000045;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-sharing h2 {
+    font-size: 30px;
+    color: #25D366;
+    margin-bottom: 40px;
+}
+.profile-sharing, .message{
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.profile-sharing__qr-code img {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}

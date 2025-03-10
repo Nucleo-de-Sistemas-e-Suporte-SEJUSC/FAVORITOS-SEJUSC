@@ -1,0 +1,513 @@
+
+
+.principal__background {
+    background-image: url(../assets/main-brackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.principal {
+    width: 1800px;
+    margin: 0 auto;
+    font-family: rawline;
+    font-weight: 800; 
+    padding-bottom: 100px; /* Adicionado para evitar que o input suba para o header */
+}
+
+.form {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 10px; /* Adicionado para dar espaço entre o formulário e os cards */
+}
+
+.form__label {
+    color: #000045;
+    font-size: 24px;
+}
+
+.form__container__input {
+    display: flex;
+    max-width: 100%;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.input {
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #000045;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #000045;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    transition: .5s;
+    background-color:  rgba(37, 211, 102, 0.9);
+}
+
+.links {
+    max-width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas inicialmente */
+    gap: 25px; /* Espaçamento entre os cards */
+}
+.urls__link {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 5px;
+    background-color: #000045;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    overflow: hidden;
+}
+
+.urls__link:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 69, 0.9);
+}
+
+.urls__link:hover::after {
+    content: "Acessar";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(37, 211, 102, 0.9);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.urls__image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: var(--logo-height, auto);
+    transition: height 0.3s ease;
+    z-index: 1;
+}
+/* Exemplo de como definir a altura para cada logo */
+.logo-sejusc {
+    --logo-height: 200px;
+}
+
+.logo-sefaz {
+    --logo-height: 90px;
+}
+
+.logo-ajuri {
+    --logo-height: 80px;
+}
+
+.logo-protocolo-virtual {
+    --logo-height: 90px;
+}
+
+.logo-sgc {
+    --logo-height: 90px;
+}
+
+.logo-doe {
+    --logo-height: 180px;
+}
+
+.logo-e-compras {
+    --logo-height: 90px;
+}
+
+.logo-portal-integra {
+    --logo-height: 90px;
+}
+
+.logo-portal-servidor {
+    --logo-height: 90px;
+}
+
+.logo-siged {
+    --logo-height: 170px;
+}
+
+.logo-scdp {
+    --logo-height: 80px;
+}
+
+.logo-afeam {
+    --logo-height: 90px;
+}
+
+.logo-favicon {
+    --logo-height: 110px;
+}
+
+.logo-legislacao-estadual {
+    --logo-height: 80px;
+}
+
+.logo-whatsapp {
+    --logo-height: 155px;
+}
+
+.logo-sistema-de-apoio-a-mulher {
+    --logo-height: 180px;
+}
+
+.sistema-de-convenios {
+    --logo-height: 180px;
+}
+
+.logo-afi {
+    --logo-height: 120px;
+}
+
+.logo-e-contas {
+    --logo-height: 90px;
+}
+
+.logo-powerbi {
+    --logo-height: 160px;
+}
+
+.logo-glpi {
+    --logo-height: 160px;
+}
+
+.logo-gmail-logo {
+    --logo-height: 120px;
+
+}
+
+
+.urls__link span {
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    top: 60px;
+}
+
+@media (max-width: 1200px) {
+    .links {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas menores */
+        gap: 25px; /* Espaçamento entre os cards */
+    }
+   
+    .logo-sejusc {
+        --logo-height: 500px;
+    }
+
+    .logo-sefaz {
+        --logo-height: 90px;
+    }
+
+    .logo-ajuri {
+        --logo-height: 90px;
+    }
+
+    .logo-protocolo-virtual {
+        --logo-height: 90px;
+    }
+
+    .logo-sgc {
+        --logo-height: 90px;
+    }
+
+    .logo-doe {
+        --logo-height: 140px;
+    }
+
+    .logo-e-compras {
+        --logo-height: 80px;
+    }
+
+    .logo-portal-integra {
+        --logo-height: 80px;
+    }
+
+    .logo-portal-servidor {
+        --logo-height: 80px;
+    }
+
+    .logo-siged {
+        --logo-height: 150px;
+    }
+
+    .logo-scdp {
+        --logo-height: 60px;
+    }
+
+    .logo-afeam {
+        --logo-height: 90px;
+    }
+
+    .logo-favicon {
+        --logo-height: 100px;
+    }
+
+    .logo-legislacao-estadual {
+        --logo-height: 60px;
+    }
+
+    .logo-whatsapp {
+        --logo-height: 130px;
+    }
+
+    .logo-sistema-de-apoio-a-mulher {
+        --logo-height: 100px;
+    }
+
+    .logo-sistema-convenios {
+        --logo-height: 110px;
+    }
+
+    .logo-afi {
+        --logo-height: 110px;
+    }
+
+    .logo-e-contas {
+        --logo-height: 90px;
+    }
+
+    .logo-powerbi {
+        --logo-height: 180px;
+    }
+
+    .logo-glpi {
+        --logo-height: 180px;
+    }
+    .logo-sistema-de-apoio-a-mulher {
+        --logo-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        grid-template-columns: repeat(2, 1fr); /* 3 colunas para tablets */
+        width: 98%;
+        gap: 25px; /* Espaçamento menor entre os cards */
+        padding: 5px; /* Padding menor */
+    }
+    .urls__link {
+        height: 150px; /* Altura menor para tablets */
+    }
+
+    .urls__link span {
+        font-size: 14px; /* Fonte menor para tablets */
+    }
+    .logo-sejusc {
+        --logo-height: 210px;
+    }
+
+    .logo-sefaz {
+        --logo-height: 100px;
+    }
+
+    .logo-ajuri {
+        --logo-height: 90px;
+    }
+
+    .logo-protocolo-virtual {
+        --logo-height: 100px;
+    }
+
+    .logo-sgc {
+        --logo-height: 100px;
+    }
+
+    .logo-doe {
+        --logo-height: 190px;
+    }
+
+    .logo-e-compras {
+        --logo-height: 90px;
+    }
+
+    .logo-portal-integra {
+        --logo-height: 90px;
+    }
+
+    .logo-portal-servidor {
+        --logo-height: 90px;
+    }
+
+    .logo-siged {
+        --logo-height: 180px;
+    }
+
+    .logo-scdp {
+        --logo-height: 90px;
+    }
+
+    .logo-afeam {
+        --logo-height: 90px;
+    }
+
+    .logo-favicon {
+        --logo-height: 110px;
+    }
+
+    .logo-legislacao-estadual {
+        --logo-height: 90px;
+    }
+
+    .logo-whatsapp {
+        --logo-height: 130px;
+    }
+
+    .logo-sistema-de-apoio-a-mulher {
+        --logo-height: 170px;
+    }
+
+    .logo-sistema-de-controle-de-convenios {
+        --logo-height: 120px;
+    }
+
+    .logo-afi {
+        --logo-height: 110px;
+    }
+
+    .logo-e-contas {
+        --logo-height: 100px;
+    }
+
+    .logo-powerbi {
+        --logo-height: 180px;
+    }
+
+    .logo-glpi {
+        --logo-height: 180px;
+    }
+}
+
+@media (max-width: 120px) {
+    .links {
+        grid-template-columns: repeat(1, 1fr); /* 2 colunas para celulares */
+        
+    }
+    .urls__link {
+        height: 150px; /* Altura menor para celulares */
+    }
+
+    .urls__link span {
+        font-size: 12px; /* Fonte menor para celulares */
+    }
+    .logo-sejusc {
+        --logo-height: 250px;
+    }
+
+    .logo-sefaz {
+        --logo-height: 110px;
+    }
+
+    .logo-ajuri {
+        --logo-height: 90px;
+    }
+
+    .logo-protocolo-virtual {
+        --logo-height: 110px;
+    }
+
+    .logo-sgc {
+        --logo-height: 110px;
+    }
+
+    .logo-doe {
+        --logo-height: 180px;
+    }
+
+    .logo-e-compras {
+        --logo-height: 90px;
+    }
+
+    .logo-portal-integra {
+        --logo-height: 90px;
+    }
+
+    .logo-portal-servidor {
+        --logo-height: 90px;
+    }
+
+    .logo-siged {
+        --logo-height: 200px;
+    }
+
+    .logo-scdp {
+        --logo-height: 90px;
+    }
+
+    .logo-afeam {
+        --logo-height: 90px;
+    }
+
+    .logo-favicon {
+        --logo-height: 90px;
+    }
+
+    .logo-legislacao-estadual {
+        --logo-height: 60px;
+    }
+
+    .logo-whatsapp {
+        --logo-height: 110px;
+    }
+
+    .logo-sistema-de-apoio-a-mulher {
+        --logo-height: 170px;
+    }
+
+    .logo-sistema-de-controle-de-convenios {
+        --logo-height: 120px;
+    }
+
+    .logo-afi {
+        --logo-height: 110px;
+    }
+
+    .logo-e-contas {
+        --logo-height: 110px;
+    }
+
+    .logo-powerbi {
+        --logo-height: 150px;
+    }
+
+    .logo-glpi {
+        --logo-height: 150px;
+    }
+}

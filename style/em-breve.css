@@ -1,0 +1,17 @@
+.body-em-breve {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    color: #fff;
+    font-family: rawline;
+    font-weight: 400;
+    height: 100vh;
+
+}
+
+
+.titulo-em-breve {
+    font-size: 63px;
+    font-family: rawline;
+    font-weight: bold;
+    color: #fff;
+}
