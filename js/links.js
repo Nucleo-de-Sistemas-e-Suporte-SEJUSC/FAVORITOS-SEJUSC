@@ -92,7 +92,7 @@ const links = [
     {
         nome: ["Portal e-Contas", "TCE"],
         link: "https://econtas.tce.am.gov.br/eContas/login.jsf",
-        logo: "e-contas"
+        logo: "martelo"
     },
     {
         nome: ["Sistema de Atendimento à Mulher", "SAM"],
