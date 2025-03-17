@@ -12,7 +12,8 @@
 }
 
 .principal {
-    width: 1800px;
+    max-width: 1800px;
+    width: 100%;
     margin: 0 auto;
     font-family: rawline;
     font-weight: 800; 
@@ -223,8 +224,111 @@
 }
 
 @media (max-width: 1200px) {
+    .principal {
+        max-width: 1200px;
+    }
+
     .links {
         grid-template-columns: repeat(4, 1fr); /* 4 colunas para telas menores */
+        gap: 25px; /* Espaçamento entre os cards */
+    }
+   
+    .logo-sejusc {
+        --logo-height: 200px;
+    }
+
+    .logo-gmail-logo {
+        --logo-height: 80px;
+    }
+
+    .logo-sefaz {
+        --logo-height: 90px;
+    }
+
+    .logo-ajuri {
+        --logo-height: 90px;
+    }
+
+    .logo-protocolo-virtual {
+        --logo-height: 90px;
+    }
+
+    .logo-sgc {
+        --logo-height: 90px;
+    }
+
+    .logo-doe {
+        --logo-height: 140px;
+    }
+
+    .logo-e-compras {
+        --logo-height: 80px;
+    }
+
+    .logo-portal-integra {
+        --logo-height: 80px;
+    }
+
+    .logo-portal-servidor {
+        --logo-height: 80px;
+    }
+
+    .logo-siged {
+        --logo-height: 150px;
+    }
+
+    .logo-scdp {
+        --logo-height: 60px;
+    }
+
+    .logo-afeam {
+        --logo-height: 90px;
+    }
+
+    .logo-favicon {
+        --logo-height: 100px;
+    }
+
+    .logo-legislacao-estadual {
+        --logo-height: 60px;
+    }
+
+    .logo-whatsapp {
+        --logo-height: 130px;
+    }
+
+    .logo-sistema-de-apoio-a-mulher {
+        --logo-height: 180px;
+    }
+
+    .logo-sistema-de-convenios {
+        --logo-height: 110px;
+    }
+
+    .logo-afi {
+        --logo-height: 110px;
+    }
+
+    .logo-martelo {
+        --logo-height: 90px;
+    }
+
+    .logo-powerbi {
+        --logo-height: 140px;
+    }
+
+    .logo-glpi {
+        --logo-height: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .principal {
+        max-width: 1000px;
+    }
+
+    .links {
+        grid-template-columns: repeat(3 1fr); /* 4 colunas para telas menores */
         gap: 25px; /* Espaçamento entre os cards */
     }
    
@@ -318,17 +422,32 @@
 
 @media (max-width: 768px) {
     .links {
-        grid-template-columns: repeat(2, 1fr); /* 3 colunas para tablets */
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para tablets */
         width: 98%;
-        gap: 25px; /* Espaçamento menor entre os cards */
+        gap: 15px; /* Espaçamento menor entre os cards */
         padding: 5px; /* Padding menor */
     }
+
+    .form__container__input {
+        width: 100%;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    .button {
+        width: 20%;
+        font-size: 14px;
+    }
+
     .urls__link {
         height: 150px; /* Altura menor para tablets */
+        padding: 100px;
     }
 
     .urls__link span {
-        font-size: 14px; /* Fonte menor para tablets */
+        font-size: 12px; /* Fonte menor para tablets */
     }
     .logo-sejusc {
         --logo-height: 210px;
