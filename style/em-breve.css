@@ -5,7 +5,16 @@
     font-family: rawline;
     font-weight: 400;
     height: 100vh;
+   
+}
 
+.principal__background__breve {
+    background-image: url(../assets/main-brackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

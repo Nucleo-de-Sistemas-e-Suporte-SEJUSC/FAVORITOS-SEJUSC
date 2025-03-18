@@ -101,7 +101,7 @@ const links = [
     },
     {
         nome: ["Sistema de Gestão de Chamados - GLPI", "Sistema de Gestão de Chamados"],
-        link: "http://12.90.1.2/index.php?noAUTO=1",
+        link: "em-breve.html",
         logo: "glpi"
     },
     {
